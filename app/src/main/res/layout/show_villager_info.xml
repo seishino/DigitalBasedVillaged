@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/popup_1"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="NIK : "/>
+        <TextView
+            android:id="@+id/txtNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5pt"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Antrian ke "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Nama : "/>
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5pt"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Antrian ke "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Jenis Kelamin : "/>
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5pt"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Antrian ke "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Peran : "/>
+        <TextView
+            android:id="@+id/txtRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5pt"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Antrian ke "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Tempat, Tanggal Lahir : "/>
+        <TextView
+            android:id="@+id/txtBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5pt"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Antrian ke "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Pekerjaan : "/>
+        <TextView
+            android:id="@+id/txtJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5pt"
+            android:paddingLeft="5pt"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Antrian ke "/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

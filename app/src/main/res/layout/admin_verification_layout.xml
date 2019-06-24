@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorGray"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end">
+            <LinearLayout
+                android:layout_marginBottom="5pt"
+                android:layout_marginRight="5pt"
+                android:padding="5pt"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:background="@drawable/circle_button"
+                android:layout_width="150px"
+                android:layout_height="150px">
+                <Spinner
+                    android:id="@+id/btnFilter"
+                    android:spinnerMode="dialog"
+                    android:background="@drawable/ic_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

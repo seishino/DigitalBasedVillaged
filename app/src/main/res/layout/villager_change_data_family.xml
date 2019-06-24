@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:id="@+id/popup">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="2pt"
+            android:layout_width="30pt"
+            android:translationZ="1pt"
+            android:layout_height="30pt">
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                android:src="@drawable/ic_arrow_back"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingBottom="5pt"
+            android:orientation="vertical"
+            android:background="@color/colorBlack">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:text="Ubah Data Anda"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_marginTop="1pt"
+                android:id="@+id/txtSession"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGray"
+                android:text="Data Keluarga"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingBottom="5pt"
+            android:paddingLeft="5pt"
+            android:text="Alamat : "/>
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:hint="Alamat"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="5pt">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5pt"
+                android:paddingBottom="5pt"
+                android:paddingLeft="5pt"
+                android:text="RT : "/>
+
+            <EditText
+                android:id="@+id/txtRt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:hint="0"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="5pt">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5pt"
+                android:paddingBottom="5pt"
+                android:paddingLeft="5pt"
+                android:text="RW : "/>
+
+            <EditText
+                android:id="@+id/txtRw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:hint="0"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:paddingTop="5pt"
+        android:paddingBottom="5pt"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt">
+        <Button
+            android:id="@+id/btnNext"
+            android:text="Ubah"
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_tambah_obat"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+</LinearLayout>

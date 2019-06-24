@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DigitalBasedVillage</string>
+    <string-array name="spinner_gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="spinner_gender_ibu">
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="spinner_verification">
+        <item>Verifikasi</item>
+        <item>Batal Verifikasi</item>
+        <item>Hapus</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

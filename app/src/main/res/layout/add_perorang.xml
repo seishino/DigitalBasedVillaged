@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:id="@+id/popup">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="2pt"
+            android:layout_width="30pt"
+            android:translationZ="1pt"
+            android:layout_height="30pt">
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                android:src="@drawable/ic_arrow_back"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingBottom="5pt"
+            android:orientation="vertical"
+            android:background="@color/colorBlack">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:text="Isi Data Anda"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_marginTop="1pt"
+                android:id="@+id/txtSession"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGray"
+                android:text="Data Anggota Keluarga"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="5pt"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        android:layout_marginRight="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginBottom="10pt"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5pt">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5pt"
+                        android:paddingBottom="5pt"
+                        android:paddingLeft="5pt"
+                        android:text="Nomor KK : "/>
+
+                    <EditText
+                        android:id="@+id/txtNoKK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:background="@drawable/textbox_bg_2"
+                        android:inputType="number"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginRight="5pt"
+                        android:hint="Nomor KK"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5pt">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5pt"
+                        android:paddingBottom="5pt"
+                        android:paddingLeft="5pt"
+                        android:text="Nama : "/>
+
+                    <EditText
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:background="@drawable/textbox_bg_2"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginRight="5pt"
+                        android:hint="Name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5pt">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5pt"
+                    android:paddingBottom="5pt"
+                    android:paddingLeft="5pt"
+                    android:text="Peran : "/>
+
+                <Spinner
+                    android:id="@+id/spinnerRole"
+                    android:spinnerMode="dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/textbox_bg_2"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="5pt"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5pt">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5pt"
+                        android:paddingBottom="5pt"
+                        android:paddingLeft="5pt"
+                        android:text="Pekerjaan : "/>
+
+                    <EditText
+                        android:id="@+id/txtJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_marginLeft="5pt"
+                        android:background="@drawable/textbox_bg_2"
+                        android:layout_marginRight="5pt"
+                        android:hint="Pekerjaan"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:paddingTop="5pt">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5pt"
+                            android:paddingBottom="5pt"
+                            android:paddingLeft="5pt"
+                            android:text="Tempat Lahir : "/>
+
+                        <Spinner
+                            android:id="@+id/spinnerPlace"
+                            android:spinnerMode="dialog"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/textbox_bg_2"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:layout_marginLeft="5pt"
+                            android:layout_marginRight="5pt"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5pt"
+                            android:paddingBottom="5pt"
+                            android:paddingLeft="5pt"
+                            android:text="Tanggal Lahir : "/>
+
+                        <EditText
+                            android:id="@+id/txtDate"
+
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="date"
+                            android:background="@drawable/textbox_bg_2"
+                            android:layout_marginLeft="5pt"
+                            android:layout_marginRight="5pt"
+                            android:hint="01/01/2000"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5pt">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5pt"
+                        android:paddingBottom="5pt"
+                        android:paddingLeft="5pt"
+                        android:text="Jenis Kelamin : "/>
+
+                    <Spinner
+                        android:id="@+id/spinnerGender"
+                        android:spinnerMode="dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_marginLeft="5pt"
+                        android:background="@drawable/textbox_bg_2"
+                        android:layout_marginRight="5pt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:paddingTop="10pt"
+                    android:paddingBottom="5pt">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Kembali"
+                        android:background="@drawable/button_tambah_obat"
+                        android:paddingLeft="5pt"
+                        android:layout_marginRight="5pt"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="12dp"
+                        android:paddingRight="5pt"/>
+                    <Button
+                        android:id="@+id/btnAdd"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Tambah"
+                        android:background="@drawable/button_tambah_obat"
+                        android:paddingLeft="5pt"
+                        android:layout_marginRight="5pt"
+                        android:layout_marginLeft="5pt"
+                        android:textSize="12dp"
+                        android:paddingRight="5pt"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dbv.digitalbasedvillaged">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".UI.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddDataVillager"/>
+        <activity android:name=".ShowDataPenduduk"/>
+
+        <activity android:name=".UI.Register2"/>
+        <activity android:name=".UI.Register"/>
+        <activity android:name=".UI.Villager.DefaultLayout"/>
+        <activity android:name=".UI.Admin.DefaultLayout"/>
+        <activity android:name=".UI.Villager.ChangeFamilyData"/>
+        <activity android:name=".UI.Admin.ChangeFamilyData"/>
+        <activity android:name=".UI.Admin.ShowFamily"/>
+        <activity android:name=".UI.Admin.ChangePassword"/>
+        <activity android:name=".UI.Villager.ChangePassword"/>
+    </application>
+
+</manifest>
